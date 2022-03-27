@@ -31,7 +31,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_LOGIN }}rubysocial:${{ steps.get_version.outputs.VERSION }}
+          tags: seg911/rubysocial:${{ steps.get_version.outputs.VERSION }}
           build-args: |
             RAILS_KEY=${{ secrets.RAILS_KEY }}
       - name: Image digest
