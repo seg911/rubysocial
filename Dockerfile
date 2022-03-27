@@ -20,6 +20,6 @@ RUN bundle install
 
 COPY . .
 
-RUN RAILS_ENV=production RAILS_MASTER_KEY=121f8616eee1d254eaac5b7d2ef6c179 rails webpacker:compile
+RUN RAILS_ENV=production RAILS_MASTER_KEY=0f7bdd171c36911d9bcc1b32526dc93f rails webpacker:compile
 
 CMD ["rails", "s"]
