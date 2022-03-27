@@ -33,6 +33,6 @@ jobs:
           push: true
           tags: seg911/rubysocial:${{ steps.get_version.outputs.VERSION }}
           build-args: |
-            RAILS_KEY=${{ secrets.RAILS_KEY }}
+            RAILS_KEY=121f8616eee1d254eaac5b7d2ef6c179
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
